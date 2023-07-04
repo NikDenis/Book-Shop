@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
     <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Podkova:wght@500;600&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Главная</title>
+    <link rel="stylesheet" href="style/catalog.css" />
   </head>
   <body>
     <header class="page-header">
@@ -152,465 +147,88 @@
         </div>
       </section>
     </header>
-    <main class="page-content">
-      <section class="page-content-promo center">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide page-content-promo-photo"
-          data-bs-ride="true"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active page-slide-indicator"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              class="page-slide-indicator"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              class="page-slide-indicator"
-              aria-label="Slide 3"
-            ></button>
+
+    <main class="catalog-content">
+      <section class="center">
+        <div class="title-wrp">
+          <div class="catalog-link">
+            <a href="">Главная страница</a>
+            <a href="">Каталог книг</a>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active page-slide-item">
-              <h1 class="slide-item-heading">
-                Бестселлер для самых умных и&nbsp;продвинутых
-              </h1>
-              <p class="slide-item-txt">
-                Книга научит вас писать, читать, говорить по-новому. Авторы
-                на&nbsp;конкретных примерах показывают, что такое хорошо
-                и&nbsp;что такое плохо в&nbsp;информационных, рекламных,
-                журналистских и&nbsp;публицистических текстах.
-              </p>
-              <button class="slide-item-btn">Подробнее</button>
-              <div class="slide-image-book"></div>
-              <div class="slide-logo-image-book"></div>
-            </div>
-            <div class="carousel-item page-slide-item page-slide-item-color">
-              <h1 class="slide-item-heading">
-                Бестселлер для самых умных и&nbsp;продвинутых
-              </h1>
-              <p class="slide-item-txt">
-                Книга научит вас писать, читать, говорить по-новому. Авторы
-                на&nbsp;конкретных примерах показывают, что такое хорошо
-                и&nbsp;что такое плохо в&nbsp;информационных, рекламных,
-                журналистских и&nbsp;публицистических текстах.
-              </p>
-              <button class="slide-item-btn">Подробнее</button>
-              <div class="slide-image-book image-book-color"></div>
-              <div class="slide-logo-image-book image-book-photo"></div>
-            </div>
-            <div class="carousel-item page-slide-item page-slide-item-color">
-              <h1 class="slide-item-heading">
-                Бестселлер для самых умных и&nbsp;продвинутых
-              </h1>
-              <p class="slide-item-txt">
-                Книга научит вас писать, читать, говорить по-новому. Авторы
-                на&nbsp;конкретных примерах показывают, что такое хорошо
-                и&nbsp;что такое плохо в&nbsp;информационных, рекламных,
-                журналистских и&nbsp;публицистических текстах.
-              </p>
-              <button class="slide-item-btn">Подробнее</button>
-              <div class="slide-image-book image-book-color"></div>
-              <div class="slide-logo-image-book image-book-photo2"></div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <h1>Каталог книг</h1>
+        </div>
+        <div class="sidebar-wrp">
+          <h3>Категория</h3>
+          <input type="checkbox" id="category01" />
+          <label for="category01">Художественная литература</label>
+          <input type="checkbox" id="category02" />
+          <label for="category02">Книги для детей</label>
+          <input type="checkbox" id="category03" />
+          <label for="category03">Образование</label>
+          <input type="checkbox" id="category04" />
+          <label for="category04">Наука и техника</label>
+          <input type="checkbox" id="category05" />
+          <label for="category05">Общество</label>
+          <input type="checkbox" id="category06" />
+          <label for="category06">Деловая литература</label>
+          <input type="checkbox" id="category07" />
+          <label for="category07">Здоровье</label>
+          <input type="checkbox" id="category08" />
+          <label for="category08">Увлечения</label>
+          <input type="checkbox" id="category09" />
+          <label for="category09">Психология</label>
+          <input type="checkbox" id="category010" />
+          <label for="category010">Эзотерика</label>
+          <input type="checkbox" id="category011" />
+          <label for="category011">Философия и религия</label>
+          <input type="checkbox" id="category012" />
+          <label for="category012">Искусство</label>
+          <h3>Статус</h3>
+          <input type="checkbox" id="status01" />
+          <label for="status01">Хиты продаж</label>
+          <input type="checkbox" id="status02" />
+          <label for="status02">Новинки</label>
+          <input type="checkbox" id="status03" />
+          <label for="status03">Предзаказ</label>
+          <h3>Наличие</h3>
+          <input type="checkbox" id="availability01" />
+          <label for="availability01">В магазине</label>
+          <input type="checkbox" id="availability02" />
+          <label for="availability02">В интернет-магазине</label>
+          <input type="checkbox" id="availability03" />
+          <label for="availability03">Под заказ</label>
+        </div>
+        <div class="card-book-wrp">
+          <ul class="card-book__list">
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+            <li class="card-book__item">
+              <a class="card-book__link" href="#"></a>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="page-content-new-book center">
-        <h2 class="page-content-new-book-heading">Новинки</h2>
-        <ul class="page-content-new-book-list">
-          <li class="page-content-new-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>3.5</span></span
-            >
-            <a class="page-content-new-book-link" href="">
-              <img
-                class="page-content-new-book-img"
-                src="img/new-book1.jpg"
-                alt="Жизнь в удовольствие"
-                height="320px"
-              />
-            </a>
-            <p class="page-content-new-book-author">Палиенко&nbsp;А.</p>
-            <h4 class="page-content-new-book-name">
-              Жизнь в&nbsp;удовольствие
-            </h4>
-            <p class="page-content-new-book-txt">
-              Автор собрал в&nbsp;этой книге все свои знания, актуальные
-              в&nbsp;современном мире
-            </p>
-            <button class="page-content-new-book-btn">Подробнее</button>
-            <span class="page-content-new-book-count">208 страниц</span>
-          </li>
-          <li class="page-content-new-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>4.8</span></span
-            >
-            <a class="page-content-new-book-link" href="">
-              <img
-                class="page-content-new-book-img"
-                src="img/new-book2.jpg"
-                alt="Королевство"
-                height="320px"
-              />
-            </a>
-            <p class="page-content-new-book-author">Несбё&nbsp;Ю.</p>
-            <h4 class="page-content-new-book-name">Королевство</h4>
-            <p class="page-content-new-book-txt">
-              В&nbsp;норвежском городке, затерянном в&nbsp;горах, течет сонная,
-              мирная жизнь
-            </p>
-            <button class="page-content-new-book-btn">Подробнее</button>
-            <span class="page-content-new-book-count">576 страниц</span>
-          </li>
-          <li class="page-content-new-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>3.9</span></span
-            >
-            <a class="page-content-new-book-link" href="">
-              <img
-                class="page-content-new-book-img"
-                src="img/new-book3.jpg"
-                alt="Transhumanism inc"
-                height="320px"
-              />
-            </a>
-            <p class="page-content-new-book-author">Пелевин&nbsp;В.</p>
-            <h4 class="page-content-new-book-name">Transhumanism inc.</h4>
-            <p class="page-content-new-book-txt">
-              В&nbsp;будущем богатые люди смогут отделить свой мозг
-              от&nbsp;старящегося тела
-            </p>
-            <button class="page-content-new-book-btn">Подробнее</button>
-            <span class="page-content-new-book-count">608 страниц</span>
-          </li>
-          <li class="page-content-new-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>4.1</span></span
-            >
-            <a class="page-content-new-book-link" href="">
-              <img
-                class="page-content-new-book-img"
-                src="img/new-book4.jpg"
-                alt="Чувство стыда"
-                height="320px"
-              />
-            </a>
-            <p class="page-content-new-book-author">Санд&nbsp;И.</p>
-            <h4 class="page-content-new-book-name">Чувство стыда</h4>
-            <p class="page-content-new-book-txt">
-              Это чувство сидит глубоко в&nbsp;нас, о&nbsp;нем не&nbsp;принято
-              распространяться и&nbsp;обсуждать с&nbsp;близкими
-            </p>
-            <button class="page-content-new-book-btn">Подробнее</button>
-            <span class="page-content-new-book-count">170 страниц</span>
-          </li>
-        </ul>
-      </section>
-      <section class="page-content-best-book center">
-        <h2 class="page-content-best-book-heading">Лучшее</h2>
-        <ul class="page-content-best-book-list">
-          <li class="page-content-best-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>5.0</span></span
-            >
-            <a class="page-content-best-book-link" href="">
-              <img
-                class="page-content-best-book-img"
-                src="img/best-book1.jpg"
-                alt="Тревожные люди"
-              />
-            </a>
-            <p class="page-content-best-book-author">Бакман&nbsp;Ф.</p>
-            <h4 class="page-content-best-book-name">Тревожные люди</h4>
-            <p class="page-content-best-book-txt">
-              Целая галерея уязвимых персонажей, тонко подмеченная Бакманом
-              человеческая природа
-            </p>
-            <button class="page-content-best-book-btn">Подробнее</button>
-            <span class="page-content-best-book-count">416 страниц</span>
-          </li>
-          <li class="page-content-best-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>4.9</span></span
-            >
-            <a class="page-content-best-book-link" href="">
-              <img
-                class="page-content-best-book-img"
-                src="img/best-book2.jpg"
-                alt="Sapiens"
-              />
-            </a>
-            <p class="page-content-best-book-author">Харари&nbsp;Ю.</p>
-            <h4 class="page-content-best-book-name">Sapiens</h4>
-            <p class="page-content-best-book-txt">
-              Краткая история человечества. Какое будущее нас ожидает? Кто наши
-              предки?
-            </p>
-            <button class="page-content-best-book-btn">Подробнее</button>
-            <span class="page-content-best-book-count">520 страниц</span>
-          </li>
-          <li class="page-content-best-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>4.8</span></span
-            >
-            <a class="page-content-best-book-link" href="">
-              <img
-                class="page-content-best-book-img"
-                src="img/best-book3.jpg"
-                alt="Институт"
-              />
-            </a>
-            <p class="page-content-best-book-author">Кинг&nbsp;С.</p>
-            <h4 class="page-content-best-book-name">Институт</h4>
-            <p class="page-content-best-book-txt">
-              Бежать невозможно. Будущее предопределено. Загадочная Дальняя
-              половина Института
-            </p>
-            <button class="page-content-best-book-btn">Подробнее</button>
-            <span class="page-content-best-book-count">608 страниц</span>
-          </li>
-          <li class="page-content-best-book-item">
-            <span class="book-item-reating-top"
-              ><svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.87152 4.81324C7.29957 3.74612 7.5136 3.21256 7.86132 3.13861C7.95275 3.11916 8.04724 3.11916 8.13867 3.13861C8.48639 3.21256 8.70042 3.74612 9.12847 4.81324C9.37189 5.4201 9.4936 5.72352 9.72134 5.9299C9.78522 5.98779 9.85456 6.03934 9.92839 6.08384C10.1916 6.24249 10.5202 6.27192 11.1774 6.33078C12.2899 6.43041 12.8462 6.48023 13.016 6.79739C13.0512 6.86308 13.0751 6.9342 13.0868 7.00779C13.1431 7.36315 12.7342 7.73519 11.9163 8.47927L11.6892 8.68589C11.3068 9.03376 11.1157 9.2077 11.0051 9.42477C10.9387 9.55498 10.8943 9.69521 10.8734 9.83985C10.8387 10.081 10.8947 10.3333 11.0066 10.838L11.0466 11.0183C11.2474 11.9233 11.3478 12.3758 11.2225 12.5982C11.1099 12.798 10.9026 12.9259 10.6735 12.9369C10.4185 12.949 10.0592 12.6562 9.34052 12.0707C8.86704 11.6848 8.63031 11.4919 8.3675 11.4166C8.12734 11.3477 7.87265 11.3477 7.63249 11.4166C7.36968 11.4919 7.13294 11.6848 6.65947 12.0707C5.94082 12.6562 5.5815 12.949 5.32648 12.9369C5.09742 12.9259 4.89005 12.798 4.77747 12.5982C4.65215 12.3758 4.75254 11.9233 4.95334 11.0183L4.99335 10.838C5.10532 10.3333 5.1613 10.081 5.12656 9.83985C5.10572 9.69521 5.06124 9.55498 4.99491 9.42477C4.88432 9.2077 4.69314 9.03376 4.31078 8.68589L4.08366 8.47927C3.2658 7.73519 2.85688 7.36315 2.91319 7.00779C2.92485 6.9342 2.94877 6.86308 2.98395 6.79739C3.15382 6.48023 3.71007 6.43041 4.82258 6.33078C5.47977 6.27192 5.80837 6.24249 6.07159 6.08384C6.14543 6.03934 6.21477 5.98779 6.27865 5.9299C6.50639 5.72352 6.6281 5.4201 6.87152 4.81324Z"
-                  stroke="white"
-                />
-              </svg>
-              <span>4.7</span></span
-            >
-            <a class="page-content-best-book-link" href="">
-              <img
-                class="page-content-best-book-img"
-                src="img/best-book4.jpg"
-                alt="Нормальные люди"
-              />
-            </a>
-            <p class="page-content-best-book-author">Руни&nbsp;С.</p>
-            <h4 class="page-content-best-book-name">Нормальные люди</h4>
-            <p class="page-content-best-book-txt">
-              О&nbsp;желании ощутить власть над другим человеком
-              и&nbsp;одновременно всецело принадлежать ем
-            </p>
-            <button class="page-content-best-book-btn">Подробнее</button>
-            <span class="page-content-best-book-count">288 страниц</span>
-          </li>
-        </ul>
-      </section>
-      <section class="reviews center">
-        <h2 class="reviews-heading">Отзывы</h2>
-        <ul class="reviews-list">
-          <li class="reviews-list-item">
-            <div class="reviews-item-card">
-              <div class="reviews-item-card-wrp">
-                <img
-                  class="reviews-item-img"
-                  src="img/reviews1.jpg"
-                  alt="photo"
-                />
-                <div class="reviews-card-txt-wrp">
-                  <h4 class="reviews-card-name">Кирилл Агапьев</h4>
-                  <span class="reviews-item-buy">Купил 35&nbsp;книг</span>
-                </div>
-              </div>
-              <p class="reviews-item-description">
-                Огромный ассортимент разных книг, которых нет в&nbsp;магазинах
-                нашего города. Цены зачастую гораздо ниже магазинских, так плюс
-                к&nbsp;этому ещё и&nbsp; постоянные большие скидки!
-              </p>
-            </div>
-          </li>
-          <li class="reviews-list-item">
-            <div class="reviews-item-card">
-              <div class="reviews-item-card-wrp">
-                <img class="reviews-item-img" src="img/re.jpg" alt="photo" />
-                <div class="reviews-card-txt-wrp">
-                  <h4 class="reviews-card-name">Елизавета Марьина</h4>
-                  <span class="reviews-item-buy">Купила 76&nbsp;книг</span>
-                </div>
-              </div>
-              <p class="reviews-item-description">
-                Удобная навигация, большой выбор, книги в&nbsp;подарок при
-                определенной сумме заказа. Заказ собирают без ошибок, привозят
-                без задержек
-              </p>
-            </div>
-          </li>
-          <li class="reviews-list-item">
-            <div class="reviews-item-card">
-              <div class="reviews-item-card-wrp">
-                <img
-                  class="reviews-item-img"
-                  src="img/reviews3.jpg"
-                  alt="photo"
-                />
-                <div class="reviews-card-txt-wrp">
-                  <h4 class="reviews-card-name">Полина Аленичева</h4>
-                  <span class="reviews-item-buy">Купила 17&nbsp;книг</span>
-                </div>
-              </div>
-              <p class="reviews-item-description">
-                Удобный каталог, полезные отзывы на&nbsp;книги, так&nbsp;же есть
-                видеообзоры на&nbsp;книги. Иногда можно приобрести дорогое
-                издание за&nbsp;&laquo;символическую&raquo; цену.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="about-us center">
-        <h2 class="about-us-heading">О&nbsp;нас</h2>
-        <ul class="about-us-list">
-          <li class="about-us-item">
-            <div class="about-us-item-block">
-              <h4 class="about-us-block-heading">
-                По&nbsp;полочкам&nbsp;&mdash; крупнейший книжный интернет
-                магазин
-              </h4>
-              <p class="about-us-block-txt">
-                Мы&nbsp;предлагаем большой выбор книг, поддерживая длительные
-                и&nbsp;дружелюбные партнёрские отношения с&nbsp;большинством
-                издательств. Мы&nbsp;любим книги, ценим любовь к&nbsp;книгам
-                наших покупателей, поэтому стараемся сделать всё возможное,
-                чтобы каждая книга нашла своего читателя. Наши продавцы
-                разделяют вашу любовь к&nbsp;чтению и&nbsp;всегда рады помочь.
-              </p>
-            </div>
-          </li>
-          <li class="about-us-item">
-            <div class="about-us-item-block">
-              <h4 class="about-us-block-heading">
-                Почему покупать книги онлайн удобно?
-              </h4>
-              <p class="about-us-block-txt">
-                Что делать, если вам нужна особенная книга? Вдруг ее&nbsp;нет
-                в&nbsp;наличии? Чтобы сэкномить время, загляните на&nbsp;наш
-                сайт. Мы&nbsp;доставляем книги почтой, курьером, в&nbsp;пункты
-                самовывоза или бесплатно в&nbsp;магазины сети. А&nbsp;еще
-                у&nbsp;нас есть мобильное приложение, в&nbsp;котором удобно
-                делать заказы. Вы&nbsp;можете добавить в&nbsp;него Карту
-                Любимого Покупателя, чтобы копить бонусы и&nbsp;тратить
-                их&nbsp;на&nbsp;покупки.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
     </main>
+
     <footer class="page-footer">
       <section class="page-footer-wrp center">
         <div class="page-footer-social-network">
@@ -870,12 +488,5 @@
         </div>
       </section>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

@@ -1,3 +1,42 @@
 .page-header-menu-item:nth-child(2) .page-header-menu-link {
   text-decoration: underline;
 }
+
+.catalog-content__wrp {
+  display: flex;
+  gap: 30px;
+}
+.sidebar-wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-book__list {
+  display: grid;
+  grid-template-columns: repeat(4, 221px);
+  gap: 20px;
+}
+[type="checkbox"] {
+  display: none;
+}
+label {
+  position: relative;
+}
+label::before {
+  content: "";
+  border: 2px solid #bfbfbf;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 1px;
+  left: -22px;
+  box-sizing: border-box;
+}
+
+input:checked + label::before {
+  background-image: url(../img/catalog-img/Union.svg);
+  background-repeat: no-repeat;
+  border: 2px solid #3971ff;
+  background-position: center;
+}

@@ -150,54 +150,60 @@
 
     <main class="catalog-content">
       <section class="center">
-        <div class="title-wrp">
-          <div class="catalog-link">
-            <a href="">Главная страница</a>
-            <a href="">Каталог книг</a>
+        <div class="catalog-content__title-wrp">
+          <div class="catalog-content__link-wrp">
+            <a class="catalog-content__link" href="#">Главная страница</a>
+            <a class="catalog-content__link" href="#">Каталог книг</a>
           </div>
-          <h1>Каталог книг</h1>
+          <h1 class="catalog-content__title">Каталог книг</h1>
         </div>
         <div class="catalog-content__wrp">
           <div class="sidebar-wrp">
-            <h3>Категория</h3>
-            <input type="checkbox" id="category01" />
-            <label for="category01">Художественная литература</label>
-            <input type="checkbox" id="category02" />
-            <label for="category02">Книги для детей</label>
-            <input type="checkbox" id="category03" />
-            <label for="category03">Образование</label>
-            <input type="checkbox" id="category04" />
-            <label for="category04">Наука и техника</label>
-            <input type="checkbox" id="category05" />
-            <label for="category05">Общество</label>
-            <input type="checkbox" id="category06" />
-            <label for="category06">Деловая литература</label>
-            <input type="checkbox" id="category07" />
-            <label for="category07">Здоровье</label>
-            <input type="checkbox" id="category08" />
-            <label for="category08">Увлечения</label>
-            <input type="checkbox" id="category09" />
-            <label for="category09">Психология</label>
-            <input type="checkbox" id="category010" />
-            <label for="category010">Эзотерика</label>
-            <input type="checkbox" id="category011" />
-            <label for="category011">Философия и религия</label>
-            <input type="checkbox" id="category012" />
-            <label for="category012">Искусство</label>
-            <h3>Статус</h3>
-            <input type="checkbox" id="status01" />
-            <label for="status01">Хиты продаж</label>
-            <input type="checkbox" id="status02" />
-            <label for="status02">Новинки</label>
-            <input type="checkbox" id="status03" />
-            <label for="status03">Предзаказ</label>
-            <h3>Наличие</h3>
-            <input type="checkbox" id="availability01" />
-            <label for="availability01">В магазине</label>
-            <input type="checkbox" id="availability02" />
-            <label for="availability02">В интернет-магазине</label>
-            <input type="checkbox" id="availability03" />
-            <label for="availability03">Под заказ</label>
+            <h3 class="sidebar__title">Категория</h3>
+            <form class="sidebar__form form-category" action="">
+              <input type="checkbox" id="category01" />
+              <label for="category01">Художественная литература</label>
+              <input type="checkbox" id="category02" />
+              <label for="category02">Книги для детей</label>
+              <input type="checkbox" id="category03" />
+              <label for="category03">Образование</label>
+              <input type="checkbox" id="category04" />
+              <label for="category04">Наука и техника</label>
+              <input type="checkbox" id="category05" />
+              <label for="category05">Общество</label>
+              <input type="checkbox" id="category06" />
+              <label for="category06">Деловая литература</label>
+              <input type="checkbox" id="category07" />
+              <label for="category07">Здоровье</label>
+              <input type="checkbox" id="category08" />
+              <label for="category08">Увлечения</label>
+              <input type="checkbox" id="category09" />
+              <label for="category09">Психология</label>
+              <input type="checkbox" id="category010" />
+              <label for="category010">Эзотерика</label>
+              <input type="checkbox" id="category011" />
+              <label for="category011">Философия и религия</label>
+              <input type="checkbox" id="category012" />
+              <label for="category012">Искусство</label>
+            </form>
+            <h3 class="sidebar__title">Статус</h3>
+            <form class="sidebar__form form-status" action="">
+              <input type="checkbox" id="status01" />
+              <label for="status01">Хиты продаж</label>
+              <input type="checkbox" id="status02" />
+              <label for="status02">Новинки</label>
+              <input type="checkbox" id="status03" />
+              <label for="status03">Предзаказ</label>
+            </form>
+            <h3 class="sidebar__title">Наличие</h3>
+            <form class="sidebar__form form-availability" action="">
+              <input type="checkbox" id="availability01" />
+              <label for="availability01">В магазине</label>
+              <input type="checkbox" id="availability02" />
+              <label for="availability02">В интернет-магазине</label>
+              <input type="checkbox" id="availability03" />
+              <label for="availability03">Под заказ</label>
+            </form>
           </div>
           <div class="card-book-wrp">
             <ul class="card-book__list">

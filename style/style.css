@@ -475,8 +475,7 @@ li {
   order: 1;
   flex-grow: 0;
 }
-.page-content-new-book-btn,
-.page-content-best-book-btn {
+.page-content-book-btn {
   border: none;
   padding: 1px 10px 3px;
   margin: 0 7px 25px 14px;

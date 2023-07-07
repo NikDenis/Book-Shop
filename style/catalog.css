@@ -14,6 +14,11 @@
   max-width: 414px;
   width: 100%;
 }
+.catalog-content__wrp {
+  margin: 0 0 50px;
+  display: flex;
+  gap: 30px;
+}
 .catalog-content__link-wrp {
   display: flex;
   justify-content: space-between;
@@ -46,10 +51,6 @@
   margin: 0 0 44px;
 }
 
-.catalog-content__wrp {
-  display: flex;
-  gap: 30px;
-}
 .sidebar-wrp {
   display: flex;
   flex-direction: column;
@@ -131,4 +132,115 @@ label[for="category012"],
 label[for="status03"],
 label[for="availability03"] {
   margin: 0;
+}
+
+.card-book-wrp {
+}
+.card-book__list {
+}
+.card-book__item {
+  position: relative;
+  max-width: 221px;
+  width: 100%;
+  min-height: 438px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  border-radius: 4px;
+}
+.book-item-reating-top {
+}
+.card-book__link {
+}
+.card-book__img {
+  display: block;
+  width: 221px;
+  height: 221px;
+}
+.card-book__position-wrp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 17px 25px 14px;
+  box-sizing: border-box;
+  min-height: 217px;
+  max-width: 221px;
+  width: 100%;
+}
+.card-book__discription-wrp {
+  margin: 0 0 16px;
+}
+
+.card-book__author {
+  margin: 0 0 4px 0;
+}
+.card-book__name {
+  max-width: 190px;
+  width: 100%;
+  line-height: 23px;
+  margin: 0 0 7px 0;
+}
+.card-book__text {
+  max-width: 190px;
+  margin: 0;
+}
+.card-book__btn-wrp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 178px;
+  width: 100%;
+}
+.card-book__btn {
+  margin: 0;
+}
+
+.catalog-content__links-pages {
+  margin: 0 auto;
+  max-width: 127px;
+  width: 100%;
+  min-height: 24px;
+}
+.links-pages__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 127px;
+  width: 100%;
+  min-height: 24px;
+}
+.links-pages__item {
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+}
+.links-pages__link {
+  font-family: "Golos", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bfbfbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+}
+.links-pages__link:hover:not(.links-pages__active-link) {
+  color: #3971ff;
+}
+.links-pages__link:active:not(.links-pages__active-link) {
+  border: 2px solid #3971ff;
+  color: #37393e;
+}
+.links-pages__active-link {
+  border: 2px solid #3971ff;
+  color: #37393e;
+  cursor: default;
+}
+.links-pages__link > svg {
+  fill: currentColor;
 }

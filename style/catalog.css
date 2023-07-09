@@ -13,6 +13,14 @@
 .catalog-content__title-wrp {
   max-width: 414px;
   width: 100%;
+  margin: 0 0 3px;
+}
+.catalog-content__title {
+  font-family: "Podkova", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 56px;
+  color: #37393e;
 }
 .catalog-content__wrp {
   margin: 0 0 50px;
@@ -42,13 +50,48 @@
   top: 0;
   left: -12px;
 }
-.catalog-content__title {
-  font-family: "Podkova", sans-serif;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 56px;
-  color: #37393e;
-  margin: 0 0 44px;
+
+.sorting-book-select {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 20px;
+}
+.sorting-book__wrp {
+  position: relative;
+  max-width: 233px;
+  width: 100%;
+}
+.sorting-book__wrp::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/catalog-img/mark-select.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 4px;
+  top: 9px;
+  right: 5px;
+  pointer-events: none;
+}
+.sorting-book__wrp > span,
+.sorting-book__list {
+  font-family: "PT Astra Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.sorting-book__list {
+  max-width: 133px;
+  width: 100%;
+  padding: 0 13px 0 4px;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  color: #3971ff;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .sidebar-wrp {
@@ -128,16 +171,20 @@
   color: #000;
   margin: 0 0 11px;
 }
+.sidebar__form > label:hover {
+  color: #3971ff;
+  cursor: pointer;
+}
+.sidebar__form > label:hover::before {
+  border-color: #3971ff;
+  opacity: 0.7;
+}
 label[for="category012"],
 label[for="status03"],
 label[for="availability03"] {
   margin: 0;
 }
 
-.card-book-wrp {
-}
-.card-book__list {
-}
 .card-book__item {
   position: relative;
   max-width: 221px;
@@ -148,8 +195,8 @@ label[for="availability03"] {
   border-radius: 4px;
 }
 .book-item-reating-top {
-}
-.card-book__link {
+  left: 3px;
+  top: 4px;
 }
 .card-book__img {
   display: block;
@@ -243,4 +290,8 @@ label[for="availability03"] {
 }
 .links-pages__link > svg {
   fill: currentColor;
+}
+
+.page-footer-address-txt {
+  margin: 0 0 6px;
 }

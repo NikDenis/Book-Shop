@@ -1,0 +1,35 @@
+@import url(style.css);
+@import url(catalog.css);
+
+.page-header-registred-button {
+  max-width: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.page-header-registred-button span {
+  width: 18px;
+  height: 18px;
+}
+.page-header-registred-button span svg {
+  fill: none;
+  stroke: #fff;
+}
+.page-header-registred-button:hover span svg {
+  stroke: #3971ff;
+}
+.page-header-registred-button:active span svg {
+  stroke: #fff;
+}
+.page-header-entrance-button {
+  max-width: 65px;
+  background: #ff7171;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.page-header-entrance-button:hover {
+  border: 1px solid #fff;
+}
+.catalog-content__link-wrp {
+  max-width: 330px;
+}

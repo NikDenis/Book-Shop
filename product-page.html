@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог книг</title>
+    <title>Product page</title>
     <link rel="stylesheet" href="style/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Podkova:wght@500;600&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/catalog.css" />
+    <link rel="stylesheet" href="style/product-page.css" />
   </head>
   <body>
     <header class="page-header">
@@ -140,122 +136,70 @@
             </ul>
           </nav>
           <div class="page-header-menu-button">
-            <button class="page-header-registred-button">Регистрация</button>
-            <button class="page-header-entrance-button">Вход</button>
+            <button class="page-header-registred-button username-button">
+              <span
+                ><svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.7956 15.8353C14.4537 14.8785 13.7004 14.033 12.6526 13.4299C11.6047 12.8269 10.3208 12.5 9 12.5C7.6792 12.5 6.3953 12.8269 5.34743 13.4299C4.29957 14.033 3.5463 14.8785 3.20445 15.8353"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="9"
+                    cy="6.5"
+                    r="3"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  />
+                </svg> </span
+              >Кирилл
+            </button>
+            <button class="page-header-entrance-button page-header-exit-button">
+              Выход
+            </button>
           </div>
         </div>
       </section>
     </header>
 
-    <main class="catalog-content">
-      <section class="center">
-        <div class="catalog-content__title-wrp">
-          <div class="catalog-content__link-wrp">
-            <a class="catalog-content__link" href="index.html"
-              >Главная страница</a
-            >
-            <a class="catalog-content__link" href="catalog.html"
-              >Каталог книг</a
-            >
-          </div>
-          <h1 class="catalog-content__title">Каталог книг</h1>
+    <main>
+      <section>
+        <div class="catalog-content__link-wrp">
+          <a class="catalog-content__link" href="index.html"
+            >Главная страница</a
+          >
+          <a class="catalog-content__link" href="catalog.html">Каталог книг</a>
+          <a class="catalog-content__link" href="catalog.html"
+            >Железный король</a
+          >
         </div>
-        <div class="sorting-book-select">
-          <div class="sorting-book__wrp">
-            <span>Сортировать: </span>
-            <select class="sorting-book__list" name="select-sorting-book" id="">
-              <option class="sorting-book__item" value="">
-                по популярности
-              </option>
-              <option class="sorting-book__item" value="">новинки</option>
-              <option class="sorting-book__item" value="">хиты продаж</option>
-            </select>
+        <div>
+          <div></div>
+          <div>
+            <div></div>
+            <div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
-        <div class="catalog-content__wrp">
-          <div class="sidebar-wrp">
-            <h3 class="sidebar__title">Категория</h3>
-            <form class="sidebar__form form-category" action="">
-              <input type="checkbox" id="category01" />
-              <label for="category01">Художественная литература</label>
-              <input type="checkbox" id="category02" />
-              <label for="category02">Книги для детей</label>
-              <input type="checkbox" id="category03" />
-              <label for="category03">Образование</label>
-              <input type="checkbox" id="category04" />
-              <label for="category04">Наука и техника</label>
-              <input type="checkbox" id="category05" />
-              <label for="category05">Общество</label>
-              <input type="checkbox" id="category06" />
-              <label for="category06">Деловая литература</label>
-              <input type="checkbox" id="category07" />
-              <label for="category07">Здоровье</label>
-              <input type="checkbox" id="category08" />
-              <label for="category08">Увлечения</label>
-              <input type="checkbox" id="category09" />
-              <label for="category09">Психология</label>
-              <input type="checkbox" id="category010" />
-              <label for="category010">Эзотерика</label>
-              <input type="checkbox" id="category011" />
-              <label for="category011">Философия и религия</label>
-              <input type="checkbox" id="category012" />
-              <label for="category012">Искусство</label>
-            </form>
-            <h3 class="sidebar__title">Статус</h3>
-            <form class="sidebar__form form-status" action="">
-              <input type="checkbox" id="status01" />
-              <label for="status01">Хиты продаж</label>
-              <input type="checkbox" id="status02" />
-              <label for="status02">Новинки</label>
-              <input type="checkbox" id="status03" />
-              <label for="status03">Предзаказ</label>
-            </form>
-            <h3 class="sidebar__title">Наличие</h3>
-            <form class="sidebar__form form-availability" action="">
-              <input type="checkbox" id="availability01" />
-              <label for="availability01">В магазине</label>
-              <input type="checkbox" id="availability02" />
-              <label for="availability02">В интернет-магазине</label>
-              <input type="checkbox" id="availability03" />
-              <label for="availability03">Под заказ</label>
-            </form>
-          </div>
-          <div class="card-book-wrp">
-            <ul class="card-book__list"></ul>
-          </div>
-        </div>
-        <div class="catalog-content__links-pages">
-          <ul class="links-pages__list">
-            <li class="links-pages__item">
-              <a class="links-pages__link links-pages__active-link" href="#"
-                >1</a
-              >
-            </li>
-            <li class="links-pages__item">
-              <a class="links-pages__link" href="#">2</a>
-            </li>
-            <li class="links-pages__item">
-              <a class="links-pages__link" href="#">3</a>
-            </li>
-            <li class="links-pages__item">
-              <a class="links-pages__link" href="#">4</a>
-            </li>
-            <li class="links-pages__item">
-              <a class="links-pages__link" href="#">
-                <svg
-                  width="14"
-                  height="10"
-                  viewBox="0 0 14 10"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.46967 1.53033C8.17678 1.23744 8.17678 0.762563 8.46967 0.46967C8.76256 0.176777 9.23744 0.176777 9.53033 0.46967L13.5303 4.46967C13.8232 4.76256 13.8232 5.23744 13.5303 5.53033L9.53033 9.53033C9.23744 9.82322 8.76256 9.82322 8.46967 9.53033C8.17678 9.23744 8.17678 8.76256 8.46967 8.46967L11.1893 5.75H1.5C1.08579 5.75 0.75 5.41421 0.75 5C0.75 4.58579 1.08579 4.25 1.5 4.25H11.1893L8.46967 1.53033Z"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      </section>
+      <section>
+        <h2></h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section>
+        <h2></h2>
+        <ul></ul>
       </section>
     </main>
 
@@ -405,7 +349,9 @@
                 >
               </li>
               <li class="page-footer-menu-item">
-                <a class="page-footer-menu-link page-footer-style-txt" href="#"
+                <a
+                  class="page-footer-menu-link page-footer-style-txt"
+                  href="catalog.html"
                   >Каталог книг</a
                 >
               </li>
@@ -520,8 +466,5 @@
         </div>
       </section>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script type="module" src="js/catalog.js"></script>
   </body>
 </html>

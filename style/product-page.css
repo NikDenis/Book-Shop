@@ -32,4 +32,9 @@
 }
 .catalog-content__link-wrp {
   max-width: 330px;
+  margin: 0 0 20px;
+}
+
+.product {
+  padding: 50px 0 90px;
 }

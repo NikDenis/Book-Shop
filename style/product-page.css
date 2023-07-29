@@ -1,6 +1,11 @@
 @import url(style.css);
 @import url(catalog.css);
 
+* {
+  font-family: "PT Astra Sans", sans-serif;
+  font-style: normal;
+}
+
 .page-header-registred-button {
   max-width: 91px;
   display: flex;
@@ -35,6 +40,145 @@
   margin: 0 0 20px;
 }
 
-.product {
-  padding: 50px 0 90px;
+.book {
+  padding: 50px 0 0;
+  margin: 0 auto 70px;
+}
+.book__wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.book__img-wrp {
+  max-width: 485px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+}
+.book__img {
+  display: block;
+}
+
+.book__discription-wrp {
+  width: 100%;
+  max-width: 666px;
+}
+
+.book__discription {
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0 34px;
+}
+.book__reating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 107px;
+  width: 100%;
+  min-height: 16px;
+  padding: 1px 0 0;
+  box-sizing: border-box;
+}
+.book__reating span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bfbfbf;
+  display: flex;
+  align-items: center;
+}
+.book__reating span:first-child {
+  color: #3971ff;
+}
+.book__reating span:first-child svg {
+  fill: currentColor;
+  box-sizing: content-box;
+}
+.book__name {
+  font-family: "Podkova", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 56px;
+  color: #37393e;
+  margin: 0 0 7px;
+}
+.book__author {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3971ff;
+}
+
+.book__txt-wrp {
+  padding: 15px 0 0;
+  max-width: 666px;
+  width: 100%;
+  border-top: 1px solid #bfbfbf;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.information-book {
+  max-width: 246px;
+  width: 100%;
+}
+.information-book__title,
+.annotation-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #37393e;
+  margin: 0 0 12px;
+}
+.information-book__list {
+}
+.information-book__item {
+  width: 100%;
+  max-width: 246px;
+  min-height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bfbfbf;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 5px;
+}
+.information-book__item:last-child {
+  line-height: 18px;
+
+  padding: 3px 0 0;
+  margin: 0;
+}
+.information-book__item span:nth-child(1) {
+  width: 130px;
+}
+.information-book__item span:nth-child(2) {
+  color: #37393e;
+}
+
+.annotation {
+  max-width: 380px;
+  width: 100%;
+}
+.annotation-txt {
+  max-width: 380px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #37393e;
+}
+
+.reviews {
+}
+
+.section-subtitle {
+  font-family: "Podkova", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 53px;
+  color: #37393e;
+  margin: 0 0 40px;
 }

@@ -1,11 +1,14 @@
 import { newBooks } from "./data.js";
 import { bestBooks } from "./data.js";
+import { reviewsIndex } from "./data.js";
 
 const newBook = JSON.parse(newBooks);
 const bestBook = JSON.parse(bestBooks);
+const reviewsIndexPage = JSON.parse(reviewsIndex);
 
 const newBookList = document.querySelector(".page-content-new-book-list");
 const bestBookList = document.querySelector(".page-content-best-book-list");
+const reviewsList = document.querySelector(".reviews__list");
 
 newBook.forEach(
   ({ reatingCount, image, name, author, discription, countPage }) => {
@@ -84,3 +87,25 @@ bestBook.forEach(
     bestBookList.insertAdjacentHTML("beforeend", productEl);
   }
 );
+
+reviewsIndexPage.forEach(({ image, name, countBuy, discription }) => {
+  const productEl = `
+    <li class="reviews-list-item">
+            <div class="reviews-item-card">
+              <div class="reviews-item-card-wrp">
+                <img
+                  class="reviews-item-img"
+                  src="${image}"
+                  alt="photo"
+                />
+                <div class="reviews-card-txt-wrp">
+                  <h4 class="reviews-card-name">${name}</h4>
+                  <span class="reviews-item-buy">${countBuy}</span>
+                </div>
+              </div>
+              <p class="reviews-item-description">${discription}</p>
+            </div>
+          </li>`;
+
+  reviewsList.insertAdjacentHTML("beforeend", productEl);
+});

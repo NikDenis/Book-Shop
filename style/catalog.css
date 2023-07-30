@@ -42,10 +42,17 @@
   font-size: 14px;
   color: #37393e;
   position: relative;
+  transition: 0.5s ease-in-out;
+}
+.catalog-content__link:hover {
+  color: #3971ff;
+  text-shadow: 1px 1px 15px #000;
 }
 .catalog-content__link:last-child {
   color: #3971ff;
+  pointer-events: none;
 }
+
 .catalog-content__link:nth-child(n + 2)::before {
   content: "/";
   position: absolute;

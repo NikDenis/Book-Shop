@@ -13,7 +13,7 @@ const reviewsList = document.querySelector(".reviews__list");
 newBook.forEach(
   ({ reatingCount, image, name, author, discription, countPage }) => {
     const productEl = `
-    <li class="page-content-new-book-item">
+    <li class="page-content-new-book-item card-book__item">
             <span class="book-item-reating-top"
               ><svg
                 width="16"
@@ -26,25 +26,25 @@ newBook.forEach(
                   stroke="white"
                 />
               </svg>
-              <span>${reatingCount}</span></span
+              <span class="reating-book">${reatingCount}</span></span
             >
             <a class="page-content-new-book-link" href="">
               <img
-                class="page-content-new-book-img"
+                class="page-content-new-book-img card-book__img"
                 src="${image}"
                 alt="Жизнь в удовольствие"
                 height="320px"
               />
             </a>
-            <p class="page-content-new-book-author">${author}</p>
-            <h4 class="page-content-new-book-name">
+            <p class="page-content-new-book-author card-book__author">${author}</p>
+            <h4 class="page-content-new-book-name card-book__name">
               ${name}
             </h4>
             <p class="page-content-new-book-txt">
               ${discription}
             </p>
-            <button class="page-content-book-btn">Подробнее</button>
-            <span class="page-content-new-book-count">${countPage}</span>
+            <button class="page-content-book-btn" data-book-btn>Подробнее</button>
+            <span class="page-content-new-book-count card-book__count">${countPage}</span>
           </li>`;
 
     newBookList.insertAdjacentHTML("beforeend", productEl);
@@ -53,7 +53,7 @@ newBook.forEach(
 bestBook.forEach(
   ({ reatingCount, image, name, author, discription, countPage }) => {
     const productEl = `
-    <li class="page-content-best-book-item">
+    <li class="page-content-best-book-item card-book__item">
             <span class="book-item-reating-top"
               ><svg
                 width="16"
@@ -66,22 +66,22 @@ bestBook.forEach(
                   stroke="white"
                 />
               </svg>
-              <span>${reatingCount}</span></span
+              <span class="reating-book">${reatingCount}</span></span
             >
             <a class="page-content-best-book-link" href="">
               <img
-                class="page-content-best-book-img"
+                class="page-content-best-book-img card-book__img"
                 src="${image}"
                 alt="Тревожные люди"
               />
             </a>
-            <p class="page-content-best-book-author">${author}</p>
-            <h4 class="page-content-best-book-name">${name}</h4>
+            <p class="page-content-best-book-author card-book__author">${author}</p>
+            <h4 class="page-content-best-book-name card-book__name">${name}</h4>
             <p class="page-content-best-book-txt">
               ${discription}
             </p>
-            <button class="page-content-book-btn">Подробнее</button>
-            <span class="page-content-best-book-count">${countPage}</span>
+            <button class="page-content-book-btn" data-book-btn>Подробнее</button>
+            <span class="page-content-best-book-count card-book__count">${countPage}</span>
           </li>`;
 
     bestBookList.insertAdjacentHTML("beforeend", productEl);

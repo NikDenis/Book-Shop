@@ -178,7 +178,7 @@
             >Главная страница</a
           >
           <a class="catalog-content__link" href="catalog.html">Каталог книг</a>
-          <a class="catalog-content__link" href="catalog.html"
+          <a class="catalog-content__link link-name-book" href="catalog.html"
             >Железный король</a
           >
         </div>
@@ -186,7 +186,6 @@
           <div class="book__img-wrp">
             <img
               class="book__img"
-              src="img/product/king.jpg"
               alt="Железный король"
               width="485"
               height="550"
@@ -207,11 +206,11 @@
                       troke="white"
                     ></path>
                   </svg>
-                  3.8
+                  <span class="book__reating-txt">3.8</span>
                 </span>
                 <span>243 оценки</span>
               </div>
-              <h1 class="book__name">Железный король</h1>
+              <h1 class="book__name"></h1>
               <span class="book__author">Кагава Джули</span>
             </div>
             <div class="book__txt-wrp">
@@ -234,7 +233,8 @@
                     <span>Переводчик</span><span>Руснак К.</span>
                   </li>
                   <li class="information-book__item">
-                    <span>Кол-во страниц</span><span>416</span>
+                    <span>Кол-во страниц</span
+                    ><span class="information-book__count-page">416</span>
                   </li>
                   <li class="information-book__item">
                     <span>Тип обложки</span><span>Твердая</span>
@@ -541,5 +541,6 @@
     </footer>
 
     <script type="module" src="js/product-page.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

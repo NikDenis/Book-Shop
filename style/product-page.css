@@ -39,7 +39,9 @@
   max-width: 330px;
   margin: 0 0 20px;
 }
-
+.link-name-book {
+  pointer-events: none;
+}
 .book {
   padding: 50px 0 0;
   margin: 0 auto 70px;
@@ -56,6 +58,7 @@
 }
 .book__img {
   display: block;
+  border-radius: 6px;
 }
 
 .book__discription-wrp {
@@ -181,4 +184,31 @@
   line-height: 53px;
   color: #37393e;
   margin: 0 0 40px;
+}
+.recently-viewed__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 0 90px;
+}
+.recently-viewed__item {
+  max-width: 275px;
+  min-height: 515px;
+}
+.recently-viewed__link {
+}
+.recently-viewed__img {
+  width: 275px;
+  height: 320px;
+}
+.recently-viewed__position-wrp {
+  min-height: 195px;
+  max-width: 275px;
+  padding: 18px 17px 25px 14px;
+}
+.recently-viewed__author,
+.recently-viewed__name,
+.recently-viewed__txt {
+  max-width: 244px;
 }

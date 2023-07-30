@@ -71,6 +71,7 @@ export const bestBooks = `[
 
 export const catalogBooks = `[
   {
+    "id": "001",
     "reatingCount": 3.8,
     "image": "img/catalog-img/book1.jpg",
     "author": "Кагава&nbsp;Д.",
@@ -79,6 +80,7 @@ export const catalogBooks = `[
     "countPage": "416 страниц"
   },
   {
+    "id": "002",
     "reatingCount": 4.2,
     "image": "img/catalog-img/book2.jpg",
     "author": "Сакавич&nbsp;Н.",
@@ -87,6 +89,7 @@ export const catalogBooks = `[
     "countPage": "336 страниц"
   },
   {
+    "id": "003",
     "reatingCount": 4.5,
     "image": "img/catalog-img/book3.jpg",
     "author": "Акунин&nbsp;Б.",
@@ -95,6 +98,7 @@ export const catalogBooks = `[
     "countPage": "448 страниц"
   },
   {
+    "id": "004",
     "reatingCount": 3.9,
     "image": "img/catalog-img/book4.jpg",
     "author": "Макконахи&nbsp;М.",
@@ -103,6 +107,7 @@ export const catalogBooks = `[
     "countPage": "320 страниц"
   },
   {
+    "id": "005",
     "reatingCount": 3.5,
     "image": "img/catalog-img/book5.jpg",
     "author": "Майер&nbsp;С.",
@@ -111,6 +116,7 @@ export const catalogBooks = `[
     "countPage": "784 страниц"
   },
   {
+    "id": "006",
     "reatingCount": 4.4,
     "image": "img/catalog-img/book6.jpg",
     "author": "Бакман&nbsp;Ф.",
@@ -119,6 +125,7 @@ export const catalogBooks = `[
     "countPage": "384 страниц"
   },
   {
+    "id": "007",
     "reatingCount": 3.9,
     "image": "img/catalog-img/book7.jpg",
     "author": "Быков&nbsp;Д.",
@@ -127,6 +134,7 @@ export const catalogBooks = `[
     "countPage": "576 страниц"
   },
   {
+    "id": "008",
     "reatingCount": 4.1,
     "image": "img/catalog-img/book8.jpg",
     "author": "Водолазкин&nbsp;Е.",

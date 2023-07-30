@@ -502,6 +502,7 @@ li {
 .page-content-book-btn:hover {
   background-color: #ffffff;
   color: #3971ff;
+  cursor: pointer;
 }
 .page-content-book-btn:active {
   background-color: #3971ff;

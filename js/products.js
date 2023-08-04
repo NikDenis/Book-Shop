@@ -37,7 +37,7 @@ newBook.forEach(
               />
             </a>
             <p class="page-content-new-book-author card-book__author">${author}</p>
-            <h4 class="page-content-new-book-name card-book__name">
+            <h4 class="page-content-new-book-name card-book__name searchable">
               ${name}
             </h4>
             <p class="page-content-new-book-txt">
@@ -76,7 +76,7 @@ bestBook.forEach(
               />
             </a>
             <p class="page-content-best-book-author card-book__author">${author}</p>
-            <h4 class="page-content-best-book-name card-book__name">${name}</h4>
+            <h4 class="page-content-best-book-name card-book__name searchable">${name}</h4>
             <p class="page-content-best-book-txt">
               ${discription}
             </p>

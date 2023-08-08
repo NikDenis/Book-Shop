@@ -30,15 +30,18 @@ h6,
 a {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f6f6f6;
 }
 .center {
-  max-width: 1220px;
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 a {
@@ -61,37 +64,49 @@ li {
 }
 
 /* ------------- Page-header -------------- */
-.page-header-information {
+.page-header__information {
   display: flex;
-  align-content: space-between;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
-.page-header-information-logo {
+.page-header__information-logo-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 485px;
+  width: 100%;
+  margin: 0 5px 0 0;
+}
+.page-header__information-logo {
   max-width: 230px;
   width: 100%;
   height: 35px;
-  margin: 24px 37px 22px 0;
+  margin: 0 10px 0 0;
 }
-.page-header-information-logo-link > svg {
+.page-header__information-logo-link {
+  display: block;
+}
+.page-header__information-logo-link > svg {
   fill: #37393e;
 }
-.page-header-information-logo-link:hover > svg {
+.page-header__information-logo-link:hover > svg {
   fill: #3971ff;
 }
-.page-header-information-logo-link:active > svg {
+.page-header__information-logo-link:active > svg {
   fill: #37393e;
 }
-.page-header-information-logo-link > svg rect {
+.page-header__information-logo-link > svg rect {
   fill: #3971ff;
 }
-.page-header-information-logo-link:hover > svg rect {
+.page-header__information-logo-link:hover > svg rect {
   fill: #37393e;
 }
-.page-header-information-logo-link:active > svg rect {
+.page-header__information-logo-link:active > svg rect {
   fill: #3971ff;
 }
-.page-header-information-address {
+.page-header__information-address {
   font-family: "PT Astra Sans";
   font-style: normal;
   font-weight: 400;
@@ -100,9 +115,9 @@ li {
   color: #37393e;
   max-width: 218px;
   width: 100%;
-  margin: 22px 324px 22px 0;
 }
-.page-header-information-search {
+.page-header__information-search {
+  position: relative;
   max-width: 411px;
   width: 100%;
   display: flex;
@@ -110,28 +125,39 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.page-header-information-input {
-  position: relative;
-  padding: 3px 11px;
+.page-header__information-form {
   max-width: 367px;
   width: 100%;
-  /* min-height: 34px; */
-  margin-right: 10px;
+  margin: 0 5px 0 0;
 }
-.page-header-information-search > svg {
-  top: 29px;
-  right: 112px;
+.page-header__information-input {
+  position: relative;
+  padding: 6px 11px;
+  max-width: 367px;
+  width: 100%;
+  margin-right: 10px;
+  font-family: "PT Astra Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #696969;
+  box-sizing: border-box;
+}
+
+.page-header__information-search > svg {
+  top: 5px;
+  right: 49px;
   position: absolute;
   fill: none;
 }
-.page-header-information-input::placeholder {
+.page-header__information-input::placeholder {
   font-family: "PT Astra Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #bfbfbf;
 }
-.page-header-information-basket {
+.page-header__information-basket {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -143,30 +169,33 @@ li {
   border: none;
   border-radius: 2px;
 }
-.page-header-information-basket > svg {
+.page-header__information-basket > svg {
   fill: none;
 }
 .page-header-menu {
   background-color: #3971ff;
   margin: 0 0 50px 0;
+  padding: 8px 0;
 }
-.page-header-menu-wrp {
+.page-header-menu__wrp {
   display: flex;
-  align-content: center;
   justify-content: space-between;
   align-items: center;
-  min-height: 41px;
-  height: 100%;
 }
-.page-header-menu-nav {
+.page-header-menu__nav,
+.page-header-menu__list {
+  max-width: 397px;
+  width: 100%;
 }
-.page-header-menu-list {
+.page-header-menu__list {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
-.page-header-menu-item {
+.page-header-menu__item {
+  line-height: 18px;
 }
-.page-header-menu-link {
+.page-header-menu__link {
   font-family: "PT Astra Sans";
   font-style: normal;
   font-weight: 400;
@@ -174,21 +203,22 @@ li {
   line-height: 18px;
   color: #ffffff;
 }
-.page-header-menu-link:hover {
+.page-header-menu__link:hover {
   color: #000000;
 }
-.page-header-menu-link:active {
+.page-header-menu__link:active {
   color: #ffffff;
 }
-.page-header-menu-button {
+.page-header-menu__button {
   display: flex;
-  align-content: center;
   justify-content: space-between;
   align-items: center;
+  max-width: 169px;
+  width: 100%;
 }
 
-.page-header-registred-button,
-.page-header-entrance-button {
+.page-header-menu__registred-button,
+.page-header-menu__entrance-button {
   font-family: "PT Astra Sans";
   font-weight: 400;
   font-size: 16px;
@@ -198,31 +228,29 @@ li {
   padding: 0 10px 2px 10px;
   width: 100%;
 }
-
-.page-header-registred-button {
-  margin: 0 10px 0;
+.page-header-menu__registred-button {
   color: #ffffff;
   background-color: #3971ff;
   max-width: 105px;
 }
-.page-header-registred-button:hover {
+.page-header-menu__registred-button:hover {
   background-color: #ffffff;
   color: #3971ff;
 }
-.page-header-registred-button:active {
+.page-header-menu__registred-button:active {
   background-color: #3971ff;
   color: #ffffff;
 }
-.page-header-entrance-button {
+.page-header-menu__entrance-button {
   color: #3971ff;
   background-color: #ffffff;
   max-width: 55px;
 }
-.page-header-entrance-button:hover {
+.page-header-menu__entrance-button:hover {
   background-color: #3971ff;
   color: #ffffff;
 }
-.page-header-entrance-button:active {
+.page-header-menu__entrance-button:active {
   background-color: #ffffff;
   color: #3971ff;
 }
@@ -373,20 +401,27 @@ li {
 .carousel-control-next-icon {
   background-image: url(../img/Slider-next.svg);
 }
-.carousel-control-next,
-.carousel-control-prev {
-  top: -21px;
+.page-content__carousel-control-next,
+.page-content__carousel-control-prev {
+  position: absolute;
+  filter: drop-shadow(0px 0px 15px rgba(57, 113, 255, 0.3));
+  opacity: 1;
+  top: 201px;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 25px;
 }
 
-.carousel-control-next {
-  filter: drop-shadow(0px 0px 15px rgba(57, 113, 255, 0.3));
-  left: 1129px !important;
-  opacity: 1 !important;
+.page-content__carousel-control-next {
+  right: -13px;
 }
-.carousel-control-prev {
-  filter: drop-shadow(0px 0px 15px rgba(57, 113, 255, 0.3));
-  left: -91px !important;
-  opacity: 1 !important;
+.page-content__carousel-control-prev {
+  left: -15px;
 }
 /* ------------- Page-content-promo END-------------- */
 /* ------------- Page-content-new-book -------------- */
@@ -434,10 +469,24 @@ li {
   max-width: 275px;
   width: 100%;
   border-radius: 4px 4px 0px 0px;
+  display: block;
 }
+
+.card-book__position-wrp {
+  max-width: 275px;
+  width: 100%;
+  min-height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 17px 25px 14px;
+}
+.card-book__discription-wrp {
+  margin: 0 0 15px;
+}
+
 .page-content-new-book-author,
 .page-content-best-book-author {
-  margin: 18px 0 0 14px;
   font-family: "PT Astra Sans";
   font-style: normal;
   font-weight: 400;
@@ -450,7 +499,6 @@ li {
 }
 .page-content-new-book-name,
 .page-content-best-book-name {
-  margin: 0 0 4px 14px;
   font-family: "PT Astra Sans";
   font-style: normal;
   font-weight: 700;
@@ -460,10 +508,10 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin: 0 0 5px;
 }
 .page-content-new-book-txt,
 .page-content-best-book-txt {
-  margin: 0 0 14px 15px;
   max-width: 243px;
   width: 100%;
   font-family: "PT Astra Sans";
@@ -476,13 +524,21 @@ li {
   order: 1;
   flex-grow: 0;
 }
+
+.card-book__btn-wrp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 178px;
+  width: 100%;
+}
+
 .page-content-book-btn {
   border: none;
   padding: 1px 10px 3px;
-  margin: 0 7px 25px 14px;
   background: #3971ff;
   border-radius: 2px;
-
   font-family: "PT Astra Sans";
   font-style: normal;
   font-weight: 400;
@@ -718,8 +774,6 @@ li {
 }
 .page-footer-interesting-list {
 }
- {
-}
 .page-footer-interesting-link {
 }
 .page-footer-link-important {
@@ -780,4 +834,9 @@ li {
   font-size: 12px;
   line-height: 14px;
   color: #4a4c51;
+}
+
+.search-match {
+  transform: scale(1.05);
+  box-shadow: 10px 5px 5px red;
 }

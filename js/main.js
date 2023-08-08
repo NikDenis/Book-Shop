@@ -38,7 +38,12 @@ function search() {
   for (let i = 0; i < elements.length; i++) {
     if (elements[i].textContent.includes(query)) {
       elements[i].style.color = "green";
-      elements[i].scrollIntoView({ behavior: "smooth" });
+      elements[i].parentNode.parentNode.parentNode.scrollIntoView({
+        behavior: "smooth",
+      });
+      elements[i].parentNode.parentNode.parentNode.classList.add(
+        "search-match"
+      );
     } else {
       elements[i].style.color = "red";
     }

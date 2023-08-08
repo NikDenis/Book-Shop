@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.page-header-menu-item:nth-child(2) .page-header-menu-link {
+.page-header-menu__item:nth-child(2) .page-header-menu__link {
   text-decoration: underline;
 }
 

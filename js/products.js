@@ -36,15 +36,24 @@ newBook.forEach(
                 height="320px"
               />
             </a>
-            <p class="page-content-new-book-author card-book__author">${author}</p>
-            <h4 class="page-content-new-book-name card-book__name searchable">
-              ${name}
-            </h4>
-            <p class="page-content-new-book-txt">
-              ${discription}
-            </p>
-            <button class="page-content-book-btn" data-book-btn>Подробнее</button>
-            <span class="page-content-new-book-count card-book__count">${countPage}</span>
+            <div class="card-book__position-wrp">
+              <div class="card-book__discription-wrp">
+                <p class="page-content-new-book-author card-book__author">
+                ${author}
+                </p>
+                <h4 class="page-content-new-book-name card-book__name searchable">
+                  ${name}
+                </h4>
+                <p class="page-content-new-book-txt card-book__text">
+                  ${discription}
+                </p>
+              </div>
+              <div class="card-book__btn-wrp">
+                <button class="page-content-book-btn card-book__btn" data-book-btn>
+                Подробнее
+                </button>
+                <span class="page-content-new-book-count card-book__count">${countPage}</span>
+              </div>
           </li>`;
 
     newBookList.insertAdjacentHTML("beforeend", productEl);
@@ -75,13 +84,24 @@ bestBook.forEach(
                 alt="Тревожные люди"
               />
             </a>
-            <p class="page-content-best-book-author card-book__author">${author}</p>
-            <h4 class="page-content-best-book-name card-book__name searchable">${name}</h4>
-            <p class="page-content-best-book-txt">
-              ${discription}
-            </p>
-            <button class="page-content-book-btn" data-book-btn>Подробнее</button>
-            <span class="page-content-best-book-count card-book__count">${countPage}</span>
+            <div class="card-book__position-wrp">
+            <div class="card-book__discription-wrp">
+              <p class="page-content-new-book-author card-book__author">
+              ${author}
+              </p>
+              <h4 class="page-content-new-book-name card-book__name searchable">
+                ${name}
+              </h4>
+              <p class="page-content-new-book-txt card-book__text">
+                ${discription}
+              </p>
+            </div>
+            <div class="card-book__btn-wrp">
+              <button class="page-content-book-btn card-book__btn" data-book-btn>
+              Подробнее
+              </button>
+              <span class="page-content-new-book-count card-book__count">${countPage}</span>
+            </div>
           </li>`;
 
     bestBookList.insertAdjacentHTML("beforeend", productEl);

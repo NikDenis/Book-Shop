@@ -26,7 +26,7 @@ catalogBook.forEach(
           <p class="page-content-new-book-author card-book__author">
           ${author}
           </p>
-          <h4 class="page-content-new-book-name card-book__name">
+          <h4 class="page-content-new-book-name card-book__name searchable">
             ${name}
           </h4>
           <p class="page-content-new-book-txt card-book__text">

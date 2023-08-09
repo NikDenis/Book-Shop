@@ -33,10 +33,13 @@ document.querySelector("form").addEventListener("submit", function (event) {
 });
 
 function search() {
-  let query = document.getElementById("search").value;
+  let query = document.getElementById("search").value.toLowerCase();
   let elements = document.getElementsByClassName("searchable");
   for (let i = 0; i < elements.length; i++) {
-    if (elements[i].textContent.includes(query)) {
+    if (
+      elements[i].textContent.toLowerCase().includes(query) ||
+      elements[i].textContent.includes(query)
+    ) {
       elements[i].style.color = "green";
       elements[i].parentNode.parentNode.parentNode.scrollIntoView({
         behavior: "smooth",
@@ -46,6 +49,9 @@ function search() {
       );
     } else {
       elements[i].style.color = "red";
+      elements[i].parentNode.parentNode.parentNode.classList.remove(
+        "search-match"
+      );
     }
   }
 }

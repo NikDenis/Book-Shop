@@ -33,7 +33,7 @@ newBook.forEach(
                 class="page-content-new-book-img card-book__img"
                 src="${image}"
                 alt="Жизнь в удовольствие"
-                height="320px"
+                height="320"
               />
             </a>
             <div class="card-book__position-wrp">
@@ -82,6 +82,7 @@ bestBook.forEach(
                 class="page-content-best-book-img card-book__img"
                 src="${image}"
                 alt="Тревожные люди"
+                height="320"
               />
             </a>
             <div class="card-book__position-wrp">

@@ -5,7 +5,6 @@
   font-family: "PT Astra Sans", sans-serif;
   font-style: normal;
 }
-
 .page-header-registred-button {
   max-width: 91px;
   display: flex;
@@ -20,20 +19,11 @@
   fill: none;
   stroke: #fff;
 }
-.page-header-registred-button:hover span svg {
-  stroke: #3971ff;
-}
-.page-header-registred-button:active span svg {
-  stroke: #fff;
-}
 .page-header-entrance-button {
   max-width: 65px;
   background: #ff7171;
   border: 1px solid transparent;
   color: #fff;
-}
-.page-header-entrance-button:hover {
-  border: 1px solid #fff;
 }
 .catalog-content__link-wrp {
   max-width: 330px;
@@ -43,7 +33,7 @@
   pointer-events: none;
 }
 .book {
-  padding: 50px 0 0;
+  padding-top: 50px;
   margin: 0 auto 70px;
 }
 .book__wrp {
@@ -55,6 +45,7 @@
   width: 100%;
   border-radius: 6px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+  margin: 0 40px 0 0;
 }
 .book__img {
   display: block;
@@ -112,7 +103,6 @@
   line-height: 28px;
   color: #3971ff;
 }
-
 .book__txt-wrp {
   padding: 15px 0 0;
   max-width: 666px;
@@ -134,8 +124,6 @@
   color: #37393e;
   margin: 0 0 12px;
 }
-.information-book__list {
-}
 .information-book__item {
   width: 100%;
   max-width: 246px;
@@ -150,7 +138,6 @@
 }
 .information-book__item:last-child {
   line-height: 18px;
-
   padding: 3px 0 0;
   margin: 0;
 }
@@ -160,7 +147,6 @@
 .information-book__item span:nth-child(2) {
   color: #37393e;
 }
-
 .annotation {
   max-width: 380px;
   width: 100%;
@@ -173,10 +159,6 @@
   line-height: 21px;
   color: #37393e;
 }
-
-.reviews {
-}
-
 .section-subtitle {
   font-family: "Podkova", sans-serif;
   font-weight: 500;
@@ -187,8 +169,9 @@
 }
 .recently-viewed__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 40px;
   margin: 0 0 90px;
 }
@@ -196,7 +179,6 @@
   max-width: 275px;
   min-height: 515px;
 }
-
 .recently-viewed__img {
   width: 275px;
   height: 320px;
@@ -210,4 +192,14 @@
 .recently-viewed__name,
 .recently-viewed__txt {
   max-width: 244px;
+}
+
+@media (max-width: 1024px) {
+  .section-subtitle {
+    text-align: center;
+  }
+  .book__wrp {
+    flex-direction: column;
+    align-items: center;
+  }
 }

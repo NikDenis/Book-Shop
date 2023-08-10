@@ -74,21 +74,22 @@
               name="search"
               placeholder="Поиск по&nbsp;полке..."
             />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="11" cy="11" r="7" stroke="#3971FF" stroke-width="2" />
+              <path
+                d="M20 20L17 17"
+                stroke="#3971FF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </form>
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="11" cy="11" r="7" stroke="#3971FF" stroke-width="2" />
-            <path
-              d="M20 20L17 17"
-              stroke="#3971FF"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
+
           <a href="#" class="page-header__information-basket">
             <svg
               width="24"
@@ -126,9 +127,30 @@
       <section class="page-header-menu">
         <div class="page-header-menu__wrp center">
           <nav class="page-header-menu__nav">
+            <select
+              class="page-header-menu__mobile-list"
+              name="select-sorting-book"
+              onchange="window.location.href = this.options[this.selectedIndex].value"
+            >
+              <option class="page-header-menu__mobile-link" value="index.html">
+                Главная
+              </option>
+              <option
+                class="page-header-menu__mobile-link"
+                value="catalog.html"
+              >
+                Каталог книг
+              </option>
+              <option class="page-header-menu__mobile-link" value="#">
+                Оплата и&nbsp;доставка
+              </option>
+              <option class="page-header-menu__mobile-link" value="#">
+                Контакты
+              </option>
+            </select>
             <ul class="page-header-menu__list">
               <li class="page-header-menu__item">
-                <a class="page-header-menu__link" href="index.html">Главная</a>
+                <a class="page-header-menu__link" href="#">Главная</a>
               </li>
               <li class="page-header-menu__item">
                 <a class="page-header-menu__link" href="catalog.html"

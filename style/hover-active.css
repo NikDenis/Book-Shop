@@ -1,73 +1,75 @@
-.page-header-registred-button:hover span svg {
-  stroke: #3971ff;
-}
-.page-header-registred-button:active span svg {
-  stroke: #fff;
-}
-.page-header-entrance-button:hover {
-  border: 1px solid #fff;
-}
-.catalog-content__link:hover {
-  text-shadow: 1px 1px 15px #000;
-}
-.sidebar__form > label:hover {
-  cursor: pointer;
-}
-.sidebar__form > label:hover::before {
-  border-color: #3971ff;
-  opacity: 0.7;
-}
-.links-pages__link:active:not(.links-pages__active-link) {
-  border: 2px solid #3971ff;
-  color: #37393e;
-}
-.page-header__information-logo-link:active > svg,
-.page-header__information-logo-link:hover > svg rect {
-  fill: #37393e;
-}
-.page-header-menu__link:hover {
-  color: #000000;
-}
-.page-content-book-btn:hover,
-.slide-item-btn:hover,
-.page-header-menu__entrance-button:active,
-.page-header-menu__registred-button:hover {
-  background-color: #ffffff;
-  cursor: pointer;
-}
-.page-content-book-btn:active,
-.slide-item-btn:active,
-.page-header-menu__entrance-button:hover,
-.page-header-menu__registred-button:active {
-  background-color: #3971ff;
-}
-.page-footer-logo-link:hover > svg,
-.page-footer-logo-wrp-link:hover > svg,
-.page-footer-logo-link:active > svg rect,
-.page-header__information-logo-link:hover > svg,
-.page-header__information-logo-link:active > svg rect {
-  fill: #3971ff;
-}
-.page-footer-logo-link:hover > svg rect,
-.page-footer-logo-link:active > svg,
-.page-footer-logo-wrp-link:active > svg {
-  fill: #ffffff;
-}
-.page-footer-style-txt:hover,
-.page-content-book-btn:hover,
-.slide-item-btn:hover,
-.page-header-menu__entrance-button:active,
-.page-header-menu__registred-button:hover,
-.links-pages__link:hover:not(.links-pages__active-link),
-.sidebar__form > label:hover,
-.catalog-content__link:hover {
-  color: #3971ff;
-}
-.page-footer-style-txt:active,
-.page-content-book-btn:active,
-.slide-item-btn:active,
-.page-header-menu__link:active,
-.page-header-menu__entrance-button:hover,
-.page-header-menu__registred-button:active {
-  color: #ffffff;
+@media (hover: hover) {
+  .page-header-registred-button:hover span svg {
+    stroke: #3971ff;
+  }
+  .page-header-registred-button:active span svg {
+    stroke: #fff;
+  }
+  .page-header-entrance-button:hover {
+    border: 1px solid #fff;
+  }
+  .catalog-content__link:hover {
+    text-shadow: 1px 1px 15px #000;
+  }
+  .sidebar__form > label:hover {
+    cursor: pointer;
+  }
+  .sidebar__form > label:hover::before {
+    border-color: #3971ff;
+    opacity: 0.7;
+  }
+  .links-pages__link:active:not(.links-pages__active-link) {
+    border: 2px solid #3971ff;
+    color: #37393e;
+  }
+  .page-header__information-logo-link:active > svg,
+  .page-header__information-logo-link:hover > svg rect {
+    fill: #37393e;
+  }
+  .page-header-menu__link:hover {
+    color: #000000;
+  }
+  .page-content-book-btn:hover,
+  .slide-item-btn:hover,
+  .page-header-menu__entrance-button:active,
+  .page-header-menu__registred-button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .page-content-book-btn:active,
+  .slide-item-btn:active,
+  .page-header-menu__entrance-button:hover,
+  .page-header-menu__registred-button:active {
+    background-color: #3971ff;
+  }
+  .page-footer-logo-link:hover > svg,
+  .page-footer-logo-wrp-link:hover > svg,
+  .page-footer-logo-link:active > svg rect,
+  .page-header__information-logo-link:hover > svg,
+  .page-header__information-logo-link:active > svg rect {
+    fill: #3971ff;
+  }
+  .page-footer-logo-link:hover > svg rect,
+  .page-footer-logo-link:active > svg,
+  .page-footer-logo-wrp-link:active > svg {
+    fill: #ffffff;
+  }
+  .page-footer-style-txt:hover,
+  .page-content-book-btn:hover,
+  .slide-item-btn:hover,
+  .page-header-menu__entrance-button:active,
+  .page-header-menu__registred-button:hover,
+  .links-pages__link:hover:not(.links-pages__active-link),
+  .sidebar__form > label:hover,
+  .catalog-content__link:hover {
+    color: #3971ff;
+  }
+  .page-footer-style-txt:active,
+  .page-content-book-btn:active,
+  .slide-item-btn:active,
+  .page-header-menu__link:active,
+  .page-header-menu__entrance-button:hover,
+  .page-header-menu__registred-button:active {
+    color: #ffffff;
+  }
 }

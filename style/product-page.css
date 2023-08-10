@@ -203,3 +203,35 @@
     align-items: center;
   }
 }
+@media (max-width: 699px) {
+  .book__img-wrp {
+    margin: 0;
+  }
+  .book__img {
+    height: auto;
+    width: 100%;
+  }
+  .book__name {
+    font-size: 42px;
+  }
+  .book__author {
+    font-size: 19px;
+  }
+  .information-book__title,
+  .annotation-title {
+    font-size: 18px;
+  }
+  .information-book__item,
+  .annotation-txt {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .book__txt-wrp {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-subtitle {
+    font-size: 40px;
+    line-height: 35px;
+  }
+}

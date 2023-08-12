@@ -35,6 +35,7 @@ a {
   box-sizing: border-box;
 }
 body {
+  position: relative;
   background-color: #f6f6f6;
 }
 .center {
@@ -102,6 +103,7 @@ li {
   color: #37393e;
   max-width: 218px;
   width: 100%;
+  cursor: pointer;
 }
 .page-header__information-search {
   position: relative;
@@ -735,6 +737,7 @@ li {
   margin: 0 7px 0 0;
 }
 .page-footer-link-address {
+  /* position: relative; */
   max-width: 218px;
   width: 100%;
   min-height: 98px;
@@ -746,6 +749,33 @@ li {
   width: 218px;
   margin: 0 0 3px;
 }
+.map-header,
+.map-footer {
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1;
+}
+.close-header-svg,
+.close-footer-svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.map-header {
+  display: none;
+  top: 80px;
+  left: 30vh;
+}
+.map-footer {
+  display: none;
+  bottom: 200px;
+  right: 20vh;
+}
+
 .page-footer-style-txt {
   font-family: "PT Astra Sans";
   font-style: normal;
@@ -753,6 +783,7 @@ li {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* ------------- Page-footer END-------------- */
@@ -777,6 +808,7 @@ li {
   box-shadow: 0 0 35px rgb(87, 87, 87);
   border: 1px solid black;
 }
+
 @media (max-width: 1024px) {
   .page-content-new-book-heading,
   .page-content-best-book-heading,

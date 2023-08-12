@@ -6,6 +6,27 @@ const moreBtn2 = document.querySelectorAll(".page-content-best-book-btn");
 moreBtn2.forEach((elem) => {
   elem.classList.add("page-content-book-btn");
 });
+
+const mapHeader = document.querySelector(".map-header");
+const mapFooter = document.querySelector(".map-footer");
+const closeHeader = document.querySelector(".close-header-svg");
+const closeFooter = document.querySelector(".close-footer-svg");
+
+window.addEventListener("click", function (event) {
+  if (event.target.hasAttribute("data-map-link-header")) {
+    mapHeader.style.display = "block";
+  } else if (event.target.hasAttribute("data-map-link-footer")) {
+    mapFooter.style.display = "block";
+  }
+});
+window.addEventListener("click", function (event) {
+  if (event.target.hasAttribute("close-header")) {
+    mapHeader.style.display = "none";
+  } else if (event.target.hasAttribute("close-footer")) {
+    mapFooter.style.display = "none";
+  }
+});
+
 window.addEventListener("click", function (event) {
   if (event.target.hasAttribute("data-book-btn")) {
     const card = event.target.closest(".card-book__item");

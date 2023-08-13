@@ -26,7 +26,8 @@
   .page-header__information-logo-link:hover > svg rect {
     fill: #37393e;
   }
-  .page-header-menu__link:hover {
+  .page-header-menu__link:hover,
+  .page-header__information-address:active {
     color: #000000;
   }
   .page-content-book-btn:hover,
@@ -61,7 +62,8 @@
   .page-header-menu__registred-button:hover,
   .links-pages__link:hover:not(.links-pages__active-link),
   .sidebar__form > label:hover,
-  .catalog-content__link:hover {
+  .catalog-content__link:hover,
+  .page-header__information-address:hover {
     color: #3971ff;
   }
   .page-footer-style-txt:active,

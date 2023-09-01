@@ -32,7 +32,7 @@ newBook.forEach(
               <img
                 class="page-content-new-book-img card-book__img"
                 src="${image}"
-                alt="Жизнь в удовольствие"
+                alt="${name}"
                 height="320"
               />
             </a>
@@ -81,7 +81,7 @@ bestBook.forEach(
               <img
                 class="page-content-best-book-img card-book__img"
                 src="${image}"
-                alt="Тревожные люди"
+                alt="${name}"
                 height="320"
               />
             </a>
@@ -117,7 +117,7 @@ reviewsIndexPage.forEach(({ image, name, countBuy, discription }) => {
                 <img
                   class="reviews-item-img"
                   src="${image}"
-                  alt="photo"
+                  alt="${name}"
                 />
                 <div class="reviews-card-txt-wrp">
                   <h4 class="reviews-card-name">${name}</h4>

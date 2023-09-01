@@ -7,18 +7,6 @@ moreBtn2.forEach((elem) => {
   elem.classList.add("page-content-book-btn");
 });
 
-const mapFooter = document.querySelector(".map-footer");
-const closeFooter = document.querySelector(".close-footer-svg");
-
-window.addEventListener("click", function (event) {
-  if (event.target.hasAttribute("close-footer")) {
-    mapFooter.style.display = "none";
-  }
-  if (event.target.hasAttribute("data-map-link-footer")) {
-    mapFooter.style.display = "block";
-  }
-});
-
 window.addEventListener("click", function (event) {
   if (event.target.hasAttribute("data-book-btn")) {
     const card = event.target.closest(".card-book__item");

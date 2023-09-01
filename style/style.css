@@ -749,24 +749,7 @@ li {
   width: 218px;
   margin: 0 0 3px;
 }
-.map-footer {
-  position: absolute;
-  display: none;
-  bottom: 200px;
-  right: 20vh;
-  max-width: 500px;
-  width: 100%;
-  z-index: 1;
-  box-shadow: 0 0 100px rgb(8, 84, 85);
-}
-.close-footer-svg {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
+
 .page-footer-style-txt {
   font-family: "PT Astra Sans";
   font-style: normal;

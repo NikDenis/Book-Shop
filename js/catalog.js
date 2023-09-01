@@ -17,7 +17,7 @@ catalogBook.forEach(
           <img
             class="page-content-new-book-img card-book__img"
             src="${image}"
-            alt="Жизнь в удовольствие"
+            alt="${name}"
             height="320px"
           />
         </a>

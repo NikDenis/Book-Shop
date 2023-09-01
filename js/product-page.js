@@ -11,7 +11,7 @@ reviewsProduct.forEach(({ image, name, countBuy, discription }) => {
                 <img
                   class="reviews-item-img"
                   src="${image}"
-                  alt="photo"
+                  alt="${name}"
                 />
                 <div class="reviews-card-txt-wrp">
                   <h4 class="reviews-card-name">${name}</h4>
@@ -47,7 +47,7 @@ recentlyViewed.forEach(
           <img
             class="page-content-new-book-img card-book__img recently-viewed__img"
             src="${image}"
-            alt="Жизнь в удовольствие"
+            alt="${name}"
             height="320px"
           />
         </a>
@@ -83,6 +83,7 @@ const authorBook = document.querySelector(".book__author");
 const countPageBook = document.querySelector(".information-book__count-page");
 
 imageBook.src = localStorage.getItem("imgSrc");
+imageBook.alt = localStorage.getItem("name");
 nameBook.innerText = localStorage.getItem("name");
 linkNameBook.innerText = localStorage.getItem("name");
 reatingBook.innerText = localStorage.getItem("reating");

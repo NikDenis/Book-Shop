@@ -1,3 +1,13 @@
-[Ссылка на макет](https://www.figma.com/file/fa75CDeoGoAnZqFTJDrsMT/Книги-HTML-Academy-(Copy)?node-id=0-1&t=8lzgsZkNhM8FR6EH-0)
+# Проект книжный магазин.
 
-[Ссылка на сайт](https://nikdenis.github.io/Book-Shop/)
+### Проект трёхстраничный.
+### Симантикая вёрска и БЭМ.
+### Адаптивная вёрстка.
+### Добавление данных карточек товара и отзывов JSON(Шаблонизация).
+### Добавлен поиск среди карточек товара по названию элемента.
+### Слайдер на страницы добавлен с помощью Bootstrap.
+
+
+## [Ссылка на макет](https://www.figma.com/file/fa75CDeoGoAnZqFTJDrsMT/Книги-HTML-Academy-(Copy)?node-id=0-1&t=8lzgsZkNhM8FR6EH-0)
+
+## [Ссылка на сайт](https://nikdenis.github.io/Book-Shop/)
